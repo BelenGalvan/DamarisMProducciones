@@ -1,0 +1,415 @@
+* {
+    margin: 0px;
+    padding: 0%;
+  }
+  .body {
+    position: center;
+    background-color: black;
+  }
+  
+  .container {
+      display: flex;
+      width: 100%;
+      height: auto;
+      background-color: black (235, 72, 80); 
+      padding: auto;
+      justify-content:space-between ;
+      align-items: center;
+    }
+    .container .flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    .header {
+      height: 100%;
+      padding:20px;
+      border-bottom: 20px solid black;
+   } 
+   
+    /*@keyframes efecto {
+      0% {width: 200px}
+      50% {width: 300px}
+      100% {width: 360px} 
+    }*/
+    .logo {
+      display: flex;
+      width: 20px;
+      height: 250px;
+      border: 1px solid black;
+      color: #ffffff;
+    }
+    .logo /* {
+      animation-name: efecto;
+      animation-duration: 6s;
+      animation-timing-function: linear;
+      animation-iteration-count:inherit;
+      animation-delay: 0s;
+    }*/
+
+.nav {
+  background-color: blue;
+}
+.menu {
+      display: flex; 
+      background-color: black (216, 191, 216, 0.034);
+    }
+    .menu ul {
+      display: flex;
+    }
+    .menu ul :hover {
+      color: violet;
+      }
+    .menu ul li{
+      text-decoration-line:overline;
+      display: inline-block;
+      position: relative;
+    }
+    .menu ul li a {
+      font-family:monospace ;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 6px;
+      color: rgb(253, 253, 253); }
+      
+  .menu ul ul {
+    position: absolute;
+    display: none;
+  }
+  .menu ul ul li {
+    display: block;
+    text-decoration-line: none;
+  }
+
+  .menu ul li:hover ul {
+    display: block;
+  }
+   
+  .quienessomos {
+      display: flex;
+      flex-flow: row nowrap;
+      align-content: stretch;
+  }
+  .i1 {
+      display: flex;
+      position: relative;
+      flex-grow: 1,5;
+  }
+  /*falta posicionar texto*/
+  .quien {
+    display: flex;
+    color: white;
+    flex-grow: 1;
+    font: bolder;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 15px;
+  }
+  .quien {
+    line-height: 1.8;
+    font-family: Shadows Into Light, cursive; 
+    text-align:justify;
+    padding: 10px;
+    font-size: large;
+  }
+.intro {
+  box-sizing: border-box;
+  width: 80%;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+ /* .quien {
+    border: 2px, honeydew;
+    text-decoration: indigo;
+    border-style: inset;*/
+  
+
+  
+ /* .intro {
+    display: flex;
+    margin: 10px;
+    bottom: 200px;
+    width: 100%;
+    height: 450px;
+  }
+  .intro .flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: 10px;
+    justify-content: space-around;
+} 
+  /*.intro__texto {
+    font-family: "Anton", sans-serif;
+    font-weight: bolder;
+    font-style: oblique;
+    color: white;
+    position:relative;
+    margin-top: 20px;
+  }
+  
+.intro__imagen1 {
+    display: flex;
+    position: relative;
+    margin-top: 0%;
+    columns: 1;
+    justify-items:right;
+    float: left;
+    }
+.intro__imagen2 {
+    display: flex;
+    background-color: lightcoral;
+    position: relative;
+    margin-top: 0%;
+    columns: 2;
+    justify-items: left;
+    float: right;
+    margin-left: 5px;
+ }*/
+
+  /*lo que se ve
+  .intro__imagen {
+    width: 200px;
+    transition: all 5s;
+  }
+  /* lo que va a verse
+  .intro__imagen:hover {
+    width: 70%;
+  } */
+  .ImagenesGrid {
+    display: grid;
+    margin-top: 5%;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: black (231, 197, 197);
+    grid-column-gap: 30px;
+    justify-content: center;
+  }
+  .CarruselLookBook .Grid1 {
+      grid-area: Grid1;
+      grid-column: 1/1;
+      grid-row: 1/1;
+  }
+.CarruselBook .Grid2 {
+   grid-area: Grid1;
+   grid-column: 2/1;
+   grid-row: 2/2;
+}
+.CarruselEditorial .Grid3 {
+  grid-area: Grid3 ;
+  grid-column: 2/2;
+  grid-row: 1/2;
+}
+.CarruselProducto .Grid4 {
+ grid-area: imagen4 ;
+ grid-column: 2/2;
+ grid-row: 2/2;
+}
+  
+.box-model {
+    position: center;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+   }
+
+.formulario {
+    width: 100%;
+    height: auto;
+  }
+  
+  .formulario .formulario__contactanos {
+    margin-bottom: 10px;
+    font-family: "Anton", sans-serif;
+    font-weight: bolder;
+    font-style:normal;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    width: 100%;
+  }
+  
+  .formulario .formulario__nombre {
+    position: relative;
+    font-family: "Anton", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    font-size: 15px;  
+    margin-left: 10px;
+  }
+  .formulario .input__name {
+    margin-left: 25px;
+  }
+  .formulario .formulario__email {
+    position: relative;
+    font-family: "Anton", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    font-size: 15px;  
+    margin-left: 10px;
+  }
+  .formulario .input__email {
+    margin-left: 45px;
+  }
+  .formulario .formulario__celular {
+    position: relative;
+    font-family: "Anton", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    font-size: 15px;  
+    margin-left: 10px;
+  }
+  .formulario .input__cell {
+    margin-left: 20px;
+  }
+  .formulario .formulario__sesion {
+    position: relative;
+    font-family: "Anton", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    font-size: 15px;  
+    margin-left: 10px;
+  }
+  .formulario .input__sesion {
+    margin-left: 10px;
+  }
+  .formulario .formulario__consulta {
+    position: relative;
+    font-family: "Anton", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    font-size: 15px;  
+    margin-left: 10px;
+  }
+  .formulario .input__textarea {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .formulario .formulario__terminos{
+    position: relative;
+    font-family: "Anton", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+    font-size: 15px;  
+    margin-left: 10px;
+  }
+  .fomrulario .formulario__button {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .redes__instagram {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .redes__facebook {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .GaleriaGrid {
+    display: grid;
+    margin-top: 5%;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: black (231, 197, 197);
+    grid-column-gap: 15px;
+    justify-content: center;
+  }
+  .Portafolios {
+    display: grid;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    justify-content: center;
+    background-color: rgb(27, 26, 26);
+  }  
+  .Portafolios {
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  } 
+  .GaleriaGrid .imagen1 {
+      grid-area: imagen1 ;
+      grid-column: 1/1;
+      grid-row: 1/1;
+    }
+  .GaleriaGrid .imagen2 {
+      grid-area: imagen2 ;
+      grid-column: 2/1;
+      grid-row: 2/2;
+    }
+  .GaleriaGrid .imagen3 {
+      grid-area: imagen3 ;
+      grid-column: 2/2;
+      grid-row: 1/2;
+    }
+  .GaleriaGrid .imagen4 {
+     grid-area: imagen4 ;
+     grid-column: 2/2;
+     grid-row: 2/2;
+  }
+  .GaleriaGrid .imagen5 {
+    grid-area: imagen5 ;
+    grid-column: 1/2;
+    grid-row: 3/3;
+  }
+  .GaleriaGrid .imagen6 {
+    grid-area: imagen6 ;
+    grid-column: 2/2;
+    grid-row: 3/3;
+  }
+  #ContainerGrid {
+    display: grid;
+    grid-template-areas:
+    "Porta.folios."
+    "BOOKS" "EDITORIAL" 
+    "GaleriaGrid";
+    grid-template-rows: 20% 100%;
+  } 
+  .Porta.folios{
+    grid-template-areas: Portafolios;
+  }
+  .Galeria-Grid {
+    grid-template-areas: GaleriaGrid;
+  }
+  .Books {
+    display: grid;
+    font-size: 50px;
+    margin-top: 100px;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+  }  
+  .Books {
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  } 
+  .BOOKS 
+  {grid-template-areas: BOOKS;
+  }
+  .Editorial {
+    display: grid;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    justify-content: center;
+    background-color: rgb(27, 26, 26);
+  }  
+  .Editorial {
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  } 
+  .EDITORIAL
+  {grid-template-areas: EDITORIAL;
+  }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>DamarisMiñoPH</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/indexestilo.css">
+      <!--reset-->
+      <link rel = "reset" href="css/indexestilo.css">
+      <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+      <link href = "https: //fonts.googleapis.com/css2? family = Shadows + Into + Light & display = swap "rel =" stylesheet ">
+   </head>
+<body class="body">
+   <!--header -->   
+   <header class="container flex">
+      <div class="logo">
+         <img src="fotos/P R O D U C C I O N E S-Logo PNG.png" alt="logo">
+      </div>     
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="index.html">Inicio</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="nosotros.html">Sobre mí</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="contacto.html">Contacto</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="portafolio.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Portafolio
+                 </a>
+                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <li><a class="dropdown-item" href="#">Action</a></li>
+                   <li><a class="dropdown-item" href="#">Another action</a></li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" href="#">Something else here</a></li>
+                 </ul>
+               </li>
+             </ul>
+           </div>
+       </nav>
+  </header>
+ <!--FOOTER-->      
+   <!-- FORMULARIO CONTACTO -->
+   <section class="box-model">
+      <footer class=formulario>
+           <form class="formulario__interno" action="" method="" enctype="">
+              <fieldset class="formulario__border">
+                 <!-- DATOS DE CONTACTO -->
+                 <legend class="formulario__contactanos">CONTACTANOS</legend>
+                    <label class="formulario__nombre" for="name" >NOMBRE</label>
+                    <input class="input__name" id= "name" type="text" name="name">
+     
+                    <br><br>
+  
+                    <label class= "formulario__email" for="email">EMAIL</label>
+                    <input  class="input__email" id="email" type="email" name="email" required>
+                    <br><br>
+  
+                    <label class="formulario__celular" for="cell" >CELULAR</label>
+                    <input class="input__cell" id= "cell" type="cell" name="cell">
+                    <br><br>
+  
+                    <!-- select-->
+                    <label class="formulario__sesion" for="tipo">Tipo de sesión</label>
+                    <select class="input__sesion" name="SERVICIO" id="SERVICIO" required>
+                       <option value="0">Seleccione..</strong></option>
+                       <option value="1">LookBook</option>
+                       <option value="2">Editorial</option>
+                       <option value="3">Producto</option>
+                       <option value="4">Paisaje</option>
+                    </select>
+                    <br> <br>
+  
+                    <!-- TEXTYPE -->
+                    <legend class="formulario__consulta">DEJANOS TU CONSULTA</legend>
+                    <textarea class="input__textarea" name="" id="" cols="28" rows="10"> </textarea>
+                    
+            
+                    <!-- checkbox-->
+                    <main class="formulario__terminos">
+                       <div>
+                         <label for="checkbox" >He leido terminos y condiciones</label>
+                         <input type="checkbox" name="radio-igual" value="acepto" required >
+                         <br>
+                         <label for="checkbox2">Acepto terminos y condiciones</label>
+                         <input type="checkbox" name="radio-igual" value="acepto" required >
+                       </div>
+                       <br> <br>
+                       <div class="formulario__button">
+                          <!-- button -->
+                          <input type="submit" value="Enviar">
+                          <input type="reset" value="Borrar">
+                          <br> <br> 
+                       </div>
+  
+                       <!--LOGOS DE REDES-->
+                       <div class="redes_logos">
+                          <img class="redes__instagram" src="fotos/hola.png" alt="instagram" width="50px" height="50px">
+                             <p>@DamarisMiñoPH</p>
+                          <img class="redes__facebook" src="fotos/facebook.png" alt="facebook" width="50px" height="50px">
+                             <p>Damaris MiñoPH</p>
+</section>
+</body>
+</html>
